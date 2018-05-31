@@ -1,0 +1,73 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "rules": {
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-unreachable": "warn",
+    "no-unused-vars": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "quote-props": [
+      1,
+      "consistent-as-needed"
+    ],
+    "no-cond-assign": [
+      2,
+      "except-parens"
+    ],
+    "space-infix-ops": 0,
+    "default-case": 0,
+    "indent": ["warn", 4],
+    "no-else-return": 0,
+    "no-param-reassign": 0,
+    "quotes": 0,
+    "arrow-parens": 0,
+    "no-multiple-empty-lines": "warn",
+    "array-bracket-newline": ["warn", "always"],
+    "array-bracket-spacing": ["warn", "always", { "objectsInArrays": false }],
+    "object-curly-newline": ["warn", "always"],
+    "object-curly-spacing": ["warn", "always"],
+    "space-before-blocks": ["warn", "always"],  //not working
+    "space-in-parens": ["warn", "never"],
+    "keyword-spacing": ["error", { "before": true }],
+    "padded-blocks": ["warn", { "classes": "always" }],
+    "react/jsx-filename-extension": 0,
+    "spaced-comment": ["warn", "always"],
+    "padding-line-between-statements": [
+      "warn",
+      { "blankLine": "always", "prev": "function", "next": "function" },
+      { "blankLine": "always", "prev": "*", "next": "return" },
+      { "blankLine": "always", "prev": "class", "next": "*" },
+      { "blankLine": "always", "prev": "block-like", "next": "block-like" }
+    ],
+    "react/jsx-indent": [1, 4],
+    "react/jsx-uses-vars": 2,
+    "react/require-render-return": 1,
+    "react/jsx-uses-react": 2,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "react/prop-types": 0,
+    "comma-dangle": [
+      1,
+      "always-multiline"
+    ],
+    "react/sort-comp": 0,
+    "semi": [
+      1,
+      "always"
+    ]
+  }
+}

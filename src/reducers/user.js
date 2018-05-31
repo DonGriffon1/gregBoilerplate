@@ -1,15 +1,18 @@
-import {TEST_USER} from '../constants/actions';
+import {
+    TEST_USER,
+} from '../constants/actions';
 import Immutable from 'seamless-immutable';
 
 const DEFAULT_STATE = Immutable({
-    user: 'Greg'
+    user: 'Greg',
 });
 
 function userReducer(state = DEFAULT_STATE, action) {
     switch (action.type) {
-        case TEST_USER:
-            return state.set('user', action.payload);
+    case TEST_USER:
+        return state.set('user', action.payload);
     }
+
     return state;
 }
 

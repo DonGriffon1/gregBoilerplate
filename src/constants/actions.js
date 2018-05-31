@@ -1,5 +1,5 @@
-//reducer actions
+// reducer actions
 export const TEST_USER = 'TEST_USER';
 
-//saga actions
+// saga actions
 export const SAGA_ACTION = 'SAGA_ACTION';

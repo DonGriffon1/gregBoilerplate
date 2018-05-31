@@ -1,4 +1,4 @@
-**Greg Boilerplate**. v 1.0.
+**Greg Boilerplate**. v 0.0.2
 
 Features installed:
 
@@ -21,4 +21,7 @@ seamless-immutable
 The convenient way to develop your app is to use React Native Debugger https://github.com/jhen0409/react-native-debugger
 
 May be needed _yarn add remote-redux-devtools_
+
+Added .eslintrc.json(needed _yarn add global eslint_ and required plugins)
+
 

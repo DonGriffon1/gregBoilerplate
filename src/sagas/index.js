@@ -1,11 +1,15 @@
-import { call, put, takeEvery, takeLatest } from 'redux-saga/effects'
-import {TEST_USER} from '../constants/actions';
+import {
+    put, takeLatest,
+} from 'redux-saga/effects';
+import {
+    TEST_USER,
+} from '../constants/actions';
 
 function* console() {
     yield put({
         type: TEST_USER,
-        payload: 'test'
-        })
+        payload: 'test',
+    });
 }
 
 function* mySaga() {

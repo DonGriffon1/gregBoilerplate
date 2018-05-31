@@ -16,9 +16,9 @@ export default function (xToken) {
     }
     const instance = axios.create({
         headers,
-        validateStatus: function (status) {
-            return status => 400;
-        }
+        validateStatus: function () {
+            return () => 400;
+        },
     });
     const retryCondition = (error) => !error.response ||
         error.response.status === 504;
@@ -27,5 +27,6 @@ export default function (xToken) {
         retries: 0,
         retryCondition,
     });
+
     return instance;
 }

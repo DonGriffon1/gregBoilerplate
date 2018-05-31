@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+import React, {
+    Component, 
+} from 'react';
 import {
     Text,
     View,
     Button,
-    TouchableHighlight
+    TouchableHighlight,
 } from 'react-native';
-import {styles} from "./styles";
+import {
+    styles,
+} from "./styles";
 
 class HomeComponent extends Component {
 
@@ -31,6 +35,7 @@ class HomeComponent extends Component {
             </View>
         );
     }
+
 }
 
-export default HomeComponent
+export default HomeComponent;
